@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MobiShop</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <style>
+        .carousel-item img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+        .carousel-inner {
+            height: 300px;
+        }
+    
+        .navbar-brand{
+            color: cyan;
+            font-size: x-large;
+        }
+        .navbar{
+            font-size: large;
+            padding: 2%;
+            
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+     <div id="mobishop-nav">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" >
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">MobiShop</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Review">Review</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Login</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+     </div>
+    
+
+    <!-- Carousel -->
+    <div id="productCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#productCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#productCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#productCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#productCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#productCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/firstcarousel.jpg" class="d-block w-100" alt="Product Image 1">
+            </div>
+            <div class="carousel-item">
+                <img src="images/SecondCarousel.png" class="d-block w-100" alt="Product Image 2">
+            </div>
+            <div class="carousel-item">
+                <img src="images/ThirdCarousel.png" class="d-block w-100" alt="Product Image 3">
+            </div>
+            <div class="carousel-item">
+                <img src="images/fourthcarousel.jpg" class="d-block w-100" alt="Product Image 4">
+            </div>
+            <div class="carousel-item">
+                <img src="images/fifthcarousel.jpg" class="d-block w-100" alt="Product Image 5">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#productCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- Product Section -->
+    <div class="container" id="ProductsContainer">
+        <div class="row" id="productsrow">
+            <h1 id="NewProducts">New Products</h1>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="row g-0" id="ProductsCard">
+                        <div class="col-6">
+                            <img class="card-img-top" src="images/ThirdCard.jpg" alt="Smartphones 1">
+                        </div>
+                        <div class="col-6">
+                            <div class="card-body">
+                                <h4 class="card-title">Smartphones 1</h4>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. A corporis atque vero!</p>
+                                <h5 id="mobile-price">Rs.7800</h5>
+                                <a class="btn btn-primary addToCart" href="#" role="button" data-product="Mobile1" data-price="7800">Add to cart</a> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="row g-0" id="ProductsCard">
+                        <div class="col-6">
+                            <img class="card-img-top" src="images/FifthCard.jpg" alt="Smartphones 1">
+                        </div>
+                        <div class="col-6">
+                            <div class="card-body">
+                                <h4 class="card-title">Smartphones 1</h4>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. A corporis atque vero!</p>
+                                <h5 id="mobile-price">Rs.7800</h5>
+                                <a class="btn btn-primary addToCart" href="#" role="button" data-product="Mobile1" data-price="7800">Add to cart</a> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="row g-0" id="ProductsCard">
+                        <div class="col-6">
+                            <img class="card-img-top" src="images/ThirdCard.jpg" alt="Smartphones 1">
+                        </div>
+                        <div class="col-6">
+                            <div class="card-body">
+                                <h4 class="card-title">Smartphones 1</h4>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. A corporis atque vero!</p>
+                                <h5 id="mobile-price">Rs.7800</h5>
+                                <a class="btn btn-primary addToCart" href="#" role="button" data-product="Mobile1" data-price="7800">Add to cart</a> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="row g-0" id="ProductsCard">
+                        <div class="col-6">
+                            <img class="card-img-top" src="images/ThirdCard.jpg" alt="Smartphones 1">
+                        </div>
+                        <div class="col-6">
+                            <div class="card-body">
+                                <h4 class="card-title">Smartphones 1</h4>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. A corporis atque vero!</p>
+                                <h5 id="mobile-price">Rs.7800</h5>
+                                <a class="btn btn-primary addToCart" href="#" role="button" data-product="Mobile1" data-price="7800">Add to cart</a> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="row g-0" id="ProductsCard">
+                        <div class="col-6">
+                            <img class="card-img-top" src="images/ThirdCard.jpg" alt="Smartphones 1">
+                        </div>
+                        <div class="col-6">
+                            <div class="card-body">
+                                <h4 class="card-title">Smartphones 1</h4>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. A corporis atque vero!</p>
+                                <h5 id="mobile-price">Rs.7800</h5>
+                                <a class="btn btn-primary addToCart" href="#" role="button" data-product="Mobile1" data-price="7800">Add to cart</a> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="row g-0" id="ProductsCard">
+                        <div class="col-6">
+                            <img class="card-img-top" src="images/ThirdCard.jpg" alt="Smartphones 1">
+                        </div>
+                        <div class="col-6">
+                            <div class="card-body">
+                                <h4 class="card-title">Smartphones 1</h4>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. A corporis atque vero!</p>
+                                <h5 id="mobile-price">Rs.7800</h5>
+                                <a class="btn btn-primary addToCart" href="#" role="button" data-product="Mobile1" data-price="7800">Add to cart</a> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br><hr><hr><br>
+    <!-- Review Section -->
+    <div class="container mt-5" id="Review">
+        <h2 class="text-center">Customer Reviews</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Good Quality</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Andrew Mathew</h6>
+                        <p class="card-text">This is a great product! Highly recommend.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Amazing !!!!</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">John Besos</h6>
+                        <p class="card-text">Amazing quality and fast delivery.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">BUY THESE, You won't unsatisfied</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Mark Kerlin</h6>
+                        <p class="card-text">Exceeded my expectations. Will buy again.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
